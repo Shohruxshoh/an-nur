@@ -38,6 +38,39 @@
         .card-body {
             flex-grow: 1; /* Allow card body to grow and push footer down */
         }
+		.service-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      height: 250px;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: scale(1.02);
+    }
+
+    .service-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    h2.section-title {
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: center;
+    }
     </style>
 
 </head>
@@ -196,6 +229,51 @@
 			</div>
 		</section>
 		<!-- End Why Us -->
+		<!-- Xizmatlar -->
+		<section>
+			<div class="container py-5">
+				<h2 class="section-title">Xizmatlar</h2>
+				<div class="row">
+			  
+				  <!-- Ovqatlanish -->
+				  <div class="col-md-6 mb-4">
+					<div class="service-card" style="background-image: url('assets/images/ovqatlanish.jpg');">
+					  <div class="service-overlay">Ovqatlanish xizmatlari</div>
+					</div>
+				  </div>
+			  
+				  <!-- Gid (yo‘l ko‘rsatish) -->
+				  <div class="col-md-6 mb-4">
+					<div class="service-card" style="background-image: url('assets/images/git.jpg');">
+					  <div class="service-overlay">Gid xizmatlari</div>
+					</div>
+				  </div>
+			  
+				  <!-- Muzey -->
+				  <div class="col-md-6 mb-4">
+					<div class="service-card" style="background-image: url('assets/images/muzey.webp');">
+					  <div class="service-overlay">Muzeyga tashriflar</div>
+					</div>
+				  </div>
+			  
+				  <!-- Transport -->
+				  <div class="col-md-6 mb-4">
+					<div class="service-card" style="background-image: url('assets/images/tranport.jpg');">
+					  <div class="service-overlay">Transport xizmatlari</div>
+					</div>
+				  </div>
+			  
+				  <!-- Mehmonxona -->
+				  <div class="col-md-12 mb-4">
+					<div class="service-card" style="background-image: url('assets/images/mehminxona.jpg'); height: 300px;">
+					  <div class="service-overlay">Mehmonxona xizmatlari</div>
+					</div>
+				  </div>
+			  
+				</div>
+			  </div>
+		</section>
+		<!-- end Xizmatlar -->
 
 		<!-- Start Video -->
 		<section id="mu-video">
@@ -248,7 +326,7 @@
 											<div class="mu-featured-tours-single-info mt-4">
 												<h3>Buxoro</h3>
 												<h4> 2 Kun, 1 Kecha</h4>
-												<span class="mu-price-tag"></span>
+												<span class="mu-price-tag">350000 so'm</span>
 												<p> Ko'xna va boqiy Buxoroga sayohat
 												</p>
 												<a href="detail1.html" class="mu-book-now-btn">Ko'rish</a>
@@ -262,7 +340,7 @@
 											<div class="mu-featured-tours-single-info">
 												<h3>Samarqand</h3>
 												<h4> 1 Kun</h4>
-												<span class="mu-price-tag"></span>
+												<span class="mu-price-tag">400000 so'm</span>
 												<p>Samarqand sharq durdonasiga sayohat
 												</p>
 												<a href="detail2.html" class="mu-book-now-btn">Ko'rish</a>
@@ -276,7 +354,7 @@
 											<div class="mu-featured-tours-single-info mt-5">
 												<h3>Xiva</h3>
 												<h4> 1 Kun</h4>
-												<span class="mu-price-tag"></span>
+												<span class="mu-price-tag">400000 so'm</span>
 												<p>Xiva ochiq osmon ostidagi muzeyga sayohat</p>
 												<a href="detail3.html" class="mu-book-now-btn">Ko'rish</a>
 											</div>
@@ -289,7 +367,7 @@
 											<div class="mu-featured-tours-single-info mt-5">
 												<h3>Samarqand - Buxoro</h3>
 												<h4> 3 Kun, 2 Kecha</h4>
-												<span class="mu-price-tag"></span>
+												<span class="mu-price-tag">650000 so'm</span>
 												<p>Ko'xna va boqiy Buxoroga sayohat. Samarqand sharq durdonasiga sayohat</p>
 												<a href="detail4.html" class="mu-book-now-btn">Ko'rish</a>
 											</div>
@@ -303,7 +381,7 @@
 											<div class="mu-featured-tours-single-info ">
 												<h3>Toshkent</h3>
 												<h4> 1 Kun</h4>
-												<span class="mu-price-tag"></span>
+												<span class="mu-price-tag">600000 so'm</span>
 												<p>Toshkent non shahriga sayohat</p>
 												<a href="detail5.html" class="mu-book-now-btn">Ko'rish</a>
 											</div>
@@ -316,7 +394,7 @@
 											<div class="mu-featured-tours-single-info">
 												<h3>Yetti pir</h3>
 												<h4> 1 Kun</h4>
-												<span class="mu-price-tag"></span>
+												<span class="mu-price-tag">150000 so'm</span>
 												<p>Yetti pir ziyorati – qalb pokligi va ma’naviy yuksalish sari sayohat
 												</p>
 												<a href="detail6.html" class="mu-book-now-btn">Ko'rish</a>
